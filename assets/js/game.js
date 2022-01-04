@@ -14,20 +14,10 @@ var enemyHealth = 50;
 var enemyAttack = 12;
 
 
-// You can also log multiple values at once like this
-
-/*console.log(playerName, playerAttack, playerHealth);
-
 console.log(enemyNames);
-console.log(enemyNames[0]);
-console.log(enemyNames[1]);
-console.log(enemyNames[2]);
 console.log(enemyNames.length);
-for(var i = 0; i < enemyNames.length; i++) {
-    console.log(enemyNames[i]);
-    console.log(i);
-    console.log(enemyNames[i] + " is at " + i + " index");
-  } */
+console.log(enemyNames[0]);
+console.log(enemyNames[3]);
 
 //create function
 var fight = function(enemyName) {
@@ -90,7 +80,7 @@ var fight = function(enemyName) {
 for(var i = 0; i < enemyNames.length; i++) {
     if (playerHealth > 0) {
       // let player know what round they are in, remember that arrays start at 0 so it needs to have 1 added to it
-    window.alert("Welcome to Robot Gladiators! Round " + (i + 1));
+    window.alert('Welcome to Robot Gladiators! Round ' + (i + 1));
 
     // pick new enemy to fight based on the index of the enemyNames array
     var pickedEnemyName = enemyNames[i];
